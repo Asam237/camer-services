@@ -2,7 +2,7 @@
   <p style="color: #6c757d" class="submit">
     You are a service in Cameroon, submit your service in 3 minutes here
     <a
-      href="https://github.com/osscameroon/template-catalogue/issues/new?assignees=&labels=&template=take-the-catalogue.yaml&title=DO+NOT+EDIT+-+takes+the+catalogue"
+      href="https://github.com/Asam237/camer-services/issues/new?assignees=&labels=&template=take-the-service.yaml&title=DO+NOT+EDIT+-+takes+the+service"
       target="_blank"
       style="color: #2f80ed"
       class="underline"
