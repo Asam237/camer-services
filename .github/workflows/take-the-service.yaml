@@ -33,21 +33,21 @@ jobs:
 
       - run: cat service_submission.yaml
 
-      - run: cat ./src/res/service.yaml
+      - run: cat ./assets/data/service.yaml
 
       - name: Set convert json to yaml
         shell: bash
         run: |
-          yq ea '. as $item ireduce ({}; . *+ $item)' -i ./src/res/service.yaml service_submission.yaml
+          yq ea '. as $item ireduce ({}; . *+ $item)' -i ./assets/data/service.yaml service_submission.yaml
 
-      - run: cat ./src/res/service.yaml
+      - run: cat ./assets/data/service.yaml
 
       - name: Commit changes
         shell: bash
         run: |
           #          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
           #          git config --global user.name "github-actions[bot]" && \
-          git add ./src/res/service.yaml && \
+          git add ./assets/data/service.yaml && \
           git commit -m 'new service answer' && \
           git push
 
