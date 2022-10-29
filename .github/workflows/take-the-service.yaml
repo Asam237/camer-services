@@ -9,8 +9,8 @@ jobs:
     if: contains(github.event.issue.title, 'DO NOT EDIT') && contains(github.event.issue.title, 'takes the user service')
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GA_WORKFLOW_DEPLOYMENTS_TOKEN }}
+        #        with:
+        #          token: ${{ secrets.GA_WORKFLOW_DEPLOYMENTS_TOKEN }}
 
       - uses: actions/setup-node@v2
         with:
@@ -45,8 +45,8 @@ jobs:
       - name: Commit changes
         shell: bash
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
-          git config --global user.name "github-actions[bot]" && \
+          #          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+          #          git config --global user.name "github-actions[bot]" && \
           git add ./src/res/service.yaml && \
           git commit -m 'new service answer' && \
           git push
