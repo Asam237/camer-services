@@ -45,7 +45,7 @@ export default {
     return {
       searchQuery: ' ',
       search: require('../assets/search.png'),
-      mydata: this.$store.state.survey.survey,
+      mydata: this.$store.state.service.service,
     }
   },
   head: {
@@ -54,24 +54,24 @@ export default {
   computed: {
     resultQuery() {
       if (this.searchQuery) {
-        return this.mydata.survey.filter((item) => {
+        return this.mydata.service.filter((item) => {
           return this.searchQuery
             .toLowerCase()
             .split(' ')
             .every((v) => item.github_handle.toLowerCase().includes(v))
         })
       } else {
-        return this.mydata.survey
+        return this.mydata.service
       }
     },
   },
   async created() {
-    await this.showAllSurvey()
+    await this.showAllService()
   },
   methods: {
-    async showAllSurvey() {
-      if (this.mydata.survey) {
-        await this.$store.dispatch('showAllSurvey')
+    async showAllService() {
+      if (this.mydata.service) {
+        await this.$store.dispatch('showAllService')
       }
     },
   },

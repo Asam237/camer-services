@@ -1,108 +1,189 @@
-name: Take the service
-description: Take the cameroonian service
-title: "DO NOT EDIT - takes the user service"
+#name: Take the service
+#description: Take the cameroonian service
+#title: 'DO NOT EDIT - takes the user service'
+#body:
+#  - type: input
+#    id: user_name
+#    attributes:
+#      label: What is your name ?
+#      description: give us your name
+#  - type: dropdown
+#    id: service
+#    attributes:
+#      label: What service do you offer ?
+#      options:
+#        - Masonry
+#        - Electricity
+#        - Plumbing
+#        - Paint
+#        - Computer Science
+#  - type: dropdown
+#    id: city
+#    attributes:
+#      label: Which city do you live in ?
+#      options:
+#        - Douala
+#        - Yaoundé
+#        - Garoua
+#        - Bamenda
+#        - Maroua
+#        - Nkongsamba
+#        - Bafoussam
+#        - Ngaoundéré
+#        - Bertoua
+#        - Loum
+#        - Kumba
+#        - Edéa
+#        - Kumbo
+#        - Foumban
+#        - Mbouda
+#        - Dschang
+#        - Limbé
+#        - Ebolowa
+#        - Kousséri
+#        - Guider
+#        - Meiganga
+#        - Yagoua
+#        - Mbalmayo
+#        - Bafang
+#        - Tiko
+#        - Bafia
+#        - Wum
+#        - Kribi
+#        - Buea
+#        - Sangmélima
+#        - Foumbot
+#        - Bangangté
+#        - Batouri
+#        - Banyo
+#        - Nkambé
+#        - Bali
+#        - Mbanga
+#        - Mokolo
+#        - Melong
+#        - Manjo
+#        - Garoua-Boulaï
+#        - Mora
+#        - Kaélé
+#        - Tibati
+#        - Ndop
+#        - Akonolinga
+#        - Eséka
+#        - Mamfé
+#        - Obala
+#        - Muyuka
+#        - Nanga-Eboko
+#        - Abong-Mbang
+#        - Fundong
+#        - Nkoteng
+#        - Fontem
+#        - Mbandjock
+#        - Touboro
+#        - Ngaoundal
+#        - Yokadouma
+#        - Pitoa
+#        - Tombel
+#        - Kékem
+#        - Magba
+#        - Bélabo
+#        - Tonga
+#        - Maga
+#        - Koutaba
+#        - Blangoua
+#        - Guidiguis
+#        - Bogo
+#        - Batibo
+#        - Yabassi
+#        - Figuil
+#        - Makénéné
+#        - Gazawa
+#        - Tcholliré
+#  - type: input
+#    id: user_mail
+#    attributes:
+#      label: What is your mail address?
+#  - type: input
+#    id: user_phone
+#    attributes:
+#      label: What is your phone ?
+
+name: Take the app's
+description: Take the cameroonian app's
+title: "DO NOT EDIT - takes the app"
 body:
   - type: input
-    id: user_name
+    id: title
     attributes:
-      label:  What is your name ?
-      description: give us your name
+      label: What is the title of your application ?
   - type: dropdown
-    id: service
+    id: category
     attributes:
-      label:  What service do you offer ?
+      label: What is the category of your application ?
       options:
-        - Masonry
-        - Electricity
-        - Plumbing
-        - Paint
-        - Computer Science
-  - type: dropdown
-    id: city
+        - community
+        - application
+        - video game
+        - platform
+        - Framework and IDE
+        - service
+        - education
+        - utility
+        - finance
+        - SIG
+  - type: checkboxes
+    id: tags
     attributes:
-      label:  Which city do you live in ?
+      label: What are your tags ?
       options:
-        - Douala
-        - Yaoundé
-        - Garoua
-        - Bamenda
-        - Maroua
-        - Nkongsamba
-        - Bafoussam
-        - Ngaoundéré
-        - Bertoua
-        - Loum
-        - Kumba
-        - Edéa
-        - Kumbo
-        - Foumban
-        - Mbouda
-        - Dschang
-        - Limbé
-        - Ebolowa
-        - Kousséri
-        - Guider
-        - Meiganga
-        - Yagoua
-        - Mbalmayo
-        - Bafang
-        - Tiko
-        - Bafia
-        - Wum
-        - Kribi
-        - Buea
-        - Sangmélima
-        - Foumbot
-        - Bangangté
-        - Batouri
-        - Banyo
-        - Nkambé
-        - Bali
-        - Mbanga
-        - Mokolo
-        - Melong
-        - Manjo
-        - Garoua-Boulaï
-        - Mora
-        - Kaélé
-        - Tibati
-        - Ndop
-        - Akonolinga
-        - Eséka
-        - Mamfé
-        - Obala
-        - Muyuka
-        - Nanga-Eboko
-        - Abong-Mbang
-        - Fundong
-        - Nkoteng
-        - Fontem
-        - Mbandjock
-        - Touboro
-        - Ngaoundal
-        - Yokadouma
-        - Pitoa
-        - Tombel
-        - Kékem
-        - Magba
-        - Bélabo
-        - Tonga
-        - Maga
-        - Koutaba
-        - Blangoua
-        - Guidiguis
-        - Bogo
-        - Batibo
-        - Yabassi
-        - Figuil
-        - Makénéné
-        - Gazawa
-        - Tcholliré
+        - label: opensource
+        - label: programming 
+        - label: developers 
   - type: input
-    id: user_mail
+    id: description
     attributes:
-      label:  What is your mail address?
+      label: What is the description of your application ?
   - type: input
-    id: user_phone
+    id: website
     attributes:
-      label:  What is your phone ?
+      label: What is the website of your application ?
+  - type: input
+    id: twitter
+    attributes:
+      label: What is the twitter group of your application ?
+  - type: input
+    id: dikalo
+    attributes:
+      label: What is the dikalo group of your application ?
+  - type: input
+    id: telegram
+    attributes:
+      label: What is the telegram group of your application ?
+  - type: input
+    id: facebook
+    attributes:
+      label: What is the facebook link of your application ?
+  - type: input
+    id: whatsapp
+    attributes:
+      label: What is the whatsapp link of your application ?
+  - type: input
+    id: playstore
+    attributes:
+      label: What is the android app store of your application ?
+  - type: input
+    id: appstore
+    attributes:
+      label: What is the ios app store of your application ?
+  - type: input
+    id: slack
+    attributes:
+      label: What is the slack of your application ?
+  - type: input
+    id: github_account
+    attributes:
+      label: What is the github account of your application ?
+  - type: input
+    id: otherslinks
+    attributes:
+      label: What is the others link of your application ?
+

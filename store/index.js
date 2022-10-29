@@ -1,6 +1,6 @@
-import mySurvey from '../assets/data/survey.yaml'
+import myService from '../assets/data/service.yaml'
 export const actions = {
-  async showAllSurvey({ commit }) {
-    return commit('survey/survey/SETSURVEY', await mySurvey.items)
+  async showAllService({ commit }) {
+    return commit('service/service/SETSERVICE', await myService.items)
   },
 }

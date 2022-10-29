@@ -159,8 +159,8 @@ export default {
     return {
       current1: '',
       elemParPage: 10,
-      data: [...Array(this.$store.state.survey.survey.length).keys()],
-      numElements: [...Array(this.$store.state.survey.survey.length).keys()]
+      data: [...Array(this.$store.state.service.service.length).keys()],
+      numElements: [...Array(this.$store.state.service.service.length).keys()]
         .length,
     }
   },

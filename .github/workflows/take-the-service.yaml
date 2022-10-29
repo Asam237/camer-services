@@ -1,7 +1,7 @@
 name: Process service's entry
 on:
   issues:
-    types: [ opened ]
+    types: [opened]
 concurrency: 'main'
 jobs:
   take_service:
