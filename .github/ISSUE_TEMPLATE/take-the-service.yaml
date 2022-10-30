@@ -7,6 +7,11 @@ body:
     attributes:
       label: What is your name ?
       description: give us your name
+  - type: input
+    id: description_service
+    attributes:
+      label: What is your description ?
+      description: give us your description
   - type: dropdown
     id: service
     attributes:

@@ -25,7 +25,7 @@
                 :key="myIndex"
                 class="card-tags-dev"
               >
-                {{ item }}
+                Civil Engineering
               </div>
             </em>
           </div>
@@ -41,7 +41,11 @@
       </div>
       <div class="h-{100px}">
         <div class="pt-2 card-tags">
-          <span class="hover:bg-blue-500">Developer</span>
+          <p style="color: #576f7f" class="mx-6 my-2">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat.
+          </p>
         </div>
       </div>
     </div>
@@ -52,14 +56,14 @@
           <font-awesome-icon
             :icon="['fas', 'envelope']"
             style="color: #2f80ed"
-            class="w-5 h-5 p-2 text-white rounded-full"
+            class="w-5 h-5 m-2 text-white rounded-full"
           />
         </a>
         <a :href="`https://gitlab.com/` + gitlab_handle" target="_blank">
           <font-awesome-icon
             :icon="['fas', 'phone']"
             style="color: #2f80ed"
-            class="w-5 h-5 p-2 text-white rounded-full"
+            class="w-5 h-5 m-2 text-white rounded-full"
           />
         </a>
       </div>
@@ -68,7 +72,7 @@
           <font-awesome-icon
             :icon="['fas', 'share']"
             style="color: #2f80ed"
-            class="w-5 h-5 p-2 text-white rounded-full"
+            class="w-5 h-5 m-2 text-white rounded-full"
           />
         </a>
       </div>
