@@ -20,13 +20,7 @@
               }}
             </h2>
             <em style="color: #576f7f" class="text-sm">
-              <div
-                v-for="(item, myIndex) in developer_type.slice(0, 1)"
-                :key="myIndex"
-                class="card-tags-dev"
-              >
-                Civil Engineering
-              </div>
+              <div class="card-tags-dev">Civil Engineering</div>
             </em>
           </div>
         </div>
@@ -61,8 +55,30 @@
         </button>
         <modal name="my-modal-mail">
           <div class="modal-content">
-            <h2>My modal mail</h2>
-            <button @click="$modal.hide('my-modal-mail')">Fermer</button>
+            <div class="flex justify-center">
+              <h2
+                style="color: #576f7f"
+                class="text-lg font-semibold text-center"
+              >
+                E-Mail
+              </h2>
+            </div>
+            <div class="flex justify-center items-center">
+              <p>emailtest@myemail.test</p>
+            </div>
+            <div>
+              <button
+                class="bg-[#576f7f] rounded-md px-4 py-1 text-white mt-4 mx-2 w-[100px]"
+              >
+                Ecrire
+              </button>
+              <button
+                class="bg-red-500 rounded-md px-4 py-1 text-white mt-4 mx-2 w-[100px]"
+                @click="$modal.hide('my-modal-mail')"
+              >
+                Fermer
+              </button>
+            </div>
           </div>
         </modal>
         <button @click="$modal.show('my-modal-phone')">
@@ -74,12 +90,38 @@
         </button>
         <modal name="my-modal-phone">
           <div class="modal-content">
-            <h2>My modal phone</h2>
-
-            <button @click="$modal.hide('my-modal-phone')">Fermer</button>
+            <div class="flex justify-center">
+              <h2
+                style="color: #576f7f"
+                class="text-lg font-semibold text-center"
+              >
+                Phone
+              </h2>
+            </div>
+            <div class="flex justify-center items-center">
+              <p>(+237) 699 99 99 99</p>
+            </div>
+            <div>
+              <button
+                class="bg-[#576f7f] rounded-md px-4 py-1 text-white mt-4 mx-2 w-[100px]"
+              >
+                Appeler
+              </button>
+              <button
+                class="bg-red-500 rounded-md px-4 py-1 text-white mt-4 mx-2 w-[100px]"
+                @click="$modal.hide('my-modal-phone')"
+              >
+                Fermer
+              </button>
+            </div>
           </div>
         </modal>
       </div>
+      <font-awesome-icon
+        :icon="['fas', 'share']"
+        style="color: #2f80ed"
+        class="w-5 h-5 m-2 text-white rounded-full"
+      />
     </div>
   </div>
 </template>
