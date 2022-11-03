@@ -52,29 +52,33 @@
     <div style="height: 1px; background: #d8d8d8" class="w-full" />
     <div style="background: #f7f7f7" class="flex justify-between p-2">
       <div>
-        <a :href="`https://github.com/` + github_handle" target="_blank">
+        <button @click="$modal.show('my-modal-mail')">
           <font-awesome-icon
             :icon="['fas', 'envelope']"
             style="color: #2f80ed"
             class="w-5 h-5 m-2 text-white rounded-full"
           />
-        </a>
-        <a :href="`https://gitlab.com/` + gitlab_handle" target="_blank">
+        </button>
+        <modal name="my-modal-mail">
+          <div class="modal-content">
+            <h2>My modal mail</h2>
+            <button @click="$modal.hide('my-modal-mail')">Fermer</button>
+          </div>
+        </modal>
+        <button @click="$modal.show('my-modal-phone')">
           <font-awesome-icon
             :icon="['fas', 'phone']"
             style="color: #2f80ed"
             class="w-5 h-5 m-2 text-white rounded-full"
           />
-        </a>
-      </div>
-      <div>
-        <a :href="`https://gitlab.com/` + gitlab_handle" target="_blank">
-          <font-awesome-icon
-            :icon="['fas', 'share']"
-            style="color: #2f80ed"
-            class="w-5 h-5 m-2 text-white rounded-full"
-          />
-        </a>
+        </button>
+        <modal name="my-modal-phone">
+          <div class="modal-content">
+            <h2>My modal phone</h2>
+
+            <button @click="$modal.hide('my-modal-phone')">Fermer</button>
+          </div>
+        </modal>
       </div>
     </div>
   </div>
@@ -109,3 +113,16 @@ export default {
   },
 }
 </script>
+<style>
+header,
+h2 {
+  margin-bottom: 20px;
+}
+.modal-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+</style>
